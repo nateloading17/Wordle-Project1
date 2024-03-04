@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WordGenerator {
+/* class WordGenerator {
     // Exercise 8: Add more possible words and return a **random** string every time `generateRandomWord` is called
     // IMPORTANT: MAKE SURE ALL THE LETTERS IN THE NEW WORDS YOU ADD ARE CAPITALIZED (e.g. "AUDIO" instead of "audio")
     // Tip: Look at the Array API documentation to see what method returns a random element
@@ -15,9 +15,19 @@ class WordGenerator {
     static let possibleWords = ["ABCDE"]
     static func generateRandomWord() -> String? {
         // START YOUR CODE HERE
-       let possibleWords = ["ABCDE", "APPLE", "BRAVE", "MARCH", "FORCE", "PURSE", "POOLS"]
-        return possibleWords.randomElement()
+        let possibleWords = ["ABCDE", "APPLE", "BRAVE", "MARCH", "FORCE", "PURSE", "POOLS"]
+        
     }
         // END YOUR CODE HERE
 }
+ */ 
+
+class WordGenerator {
+    static let possibleWords = ["ABCDE", "APPLE", "BRAVE", "MARCH", "FORCE", "PURSE", "POOLS"]
+
+    static func generateRandomWord() -> [String] {
+        return Array(possibleWords.randomElement()!.map { String($0) })
+    }
+}
+
 

@@ -4,7 +4,6 @@
 //
 //  Created by Mari Batilando on 2/20/23.
 //
-
 import Foundation
 import UIKit
 
@@ -26,7 +25,7 @@ class BoardController: NSObject,
 
   init(collectionView: UICollectionView) {
     self.collectionView = collectionView
-    self.goalWord = WordGenerator.generateRandomWord()!.map { String($0) }
+    self.goalWord = WordGenerator.generateRandomWord().map { String($0) }
     super.init()
     collectionView.delegate = self
     collectionView.dataSource = self
@@ -72,4 +71,13 @@ class BoardController: NSObject,
     // ...
     // END YOUR CODE HERE
   }
+    // NEW CODE - NEW WORD WHEN APP IS CLOSED/RESTARTED
+    private var boardController: BoardController!
+
+    func resetGame() {
+        let newBoardController = BoardController(collectionView: collectionView)
+        boardController = newBoardController
+    }
+
 }
+

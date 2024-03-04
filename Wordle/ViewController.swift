@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
         boardController = BoardController(collectionView: wordsCollectionView)
         keyboardController = KeyboardController(collectionView: keyboardCollectionView)
+        
         /*
          Exercise 3: Assign a closure to the `didSelectString` property of `keyboardController` (see KeyboardController.swift):
          
@@ -38,6 +39,10 @@ class ViewController: UIViewController {
             }
             // ...
             // END YOUR CODE HERE
+        }
+        // NEW CODE - NEW WORD WHEN APP RESTARTED
+        func resetGame() {
+            boardController.resetGame()
         }
     }
 }

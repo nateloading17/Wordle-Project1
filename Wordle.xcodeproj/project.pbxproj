@@ -45,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		425A4A322B91590C0047CC5B /* 5LetterWordDict.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 5LetterWordDict.md; sourceTree = "<group>"; };
+		425A4A342B91603B0047CC5B /* 6LetterWordDict.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 6LetterWordDict.md; sourceTree = "<group>"; };
+		425A4A352B9162D30047CC5B /* 7LetterWordDict.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 7LetterWordDict.md; sourceTree = "<group>"; };
+		425A4A362B9162F40047CC5B /* 4LetterWordDict.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = 4LetterWordDict.md; sourceTree = "<group>"; };
 		991CEC0529999E2A0095F025 /* KeyboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCell.swift; sourceTree = "<group>"; };
 		991CEC0729999ECD0095F025 /* KeyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardController.swift; sourceTree = "<group>"; };
 		9953C05429A40AC700247C5B /* BoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,10 @@
 		996B849B299990A900133037 = {
 			isa = PBXGroup;
 			children = (
+				425A4A362B9162F40047CC5B /* 4LetterWordDict.md */,
+				425A4A352B9162D30047CC5B /* 7LetterWordDict.md */,
+				425A4A342B91603B0047CC5B /* 6LetterWordDict.md */,
+				425A4A322B91590C0047CC5B /* 5LetterWordDict.md */,
 				996B84A6299990A900133037 /* Wordle */,
 				996B84BD299990AA00133037 /* WordleTests */,
 				996B84C7299990AA00133037 /* WordleUITests */,
